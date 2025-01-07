@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive UI Assignment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- Left Section (Rectangle) -->
+    <div class="section rectangle-section">
+      <h2 class="title">Interactive Rectangle</h2>
+      <div id="rectangle"></div>
+      <div class="controls">
+        <label for="rotationSlider">Rotate:</label>
+        <input type="range" id="rotationSlider" min="0" max="360" value="0">
+        <label for="colorPicker">Color:</label>
+        <input type="color" id="colorPicker" value="#0000FF">
+      </div>
+    </div>
+
+    <!-- Vertical Divider -->
+    <div class="divider"></div>
+
+    <!-- Right Section (Circle Inside Square) -->
+    <div class="section circle-section">
+      <h2 class="title">Circle Inside a Square</h2>
+      <div id="circle-container">
+        <div id="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

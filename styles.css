@@ -1,0 +1,111 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e0e0e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    max-width: 1200px; /* Prevents content from stretching too much */
+}
+
+/* Vertical Divider */
+.divider {
+    width: 2px;
+    background-color: #343a40;
+    height: 100%;
+    margin: 0 20px;
+}
+
+/* Section Styling */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+    max-width: 500px;
+}
+
+/* Title Styling */
+.title {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #343a40;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+/* Rectangle Styling */
+#rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: #007bff;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Controls Styling */
+.controls {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #495057;
+}
+
+/* Circle and Square Styling */
+#circle-container {
+    width: 240px;
+    height: 240px;
+    border: 3px solid #495057;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+#circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #dc3545;
+    position: absolute;
+    cursor: grab;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: width 0.2s, height 0.2s;
+}
+
+#circle:active {
+    cursor: grabbing;
+}
+
+/* Hover Effects */
+#rectangle:hover {
+    transform: scale(1.1);
+}
+
+#circle:hover {
+    background-color: #c82333;
+}
